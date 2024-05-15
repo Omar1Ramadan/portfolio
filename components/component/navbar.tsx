@@ -44,8 +44,8 @@ const menuTitles = [
 ];
 const NavMenu = () => {
     return(
-        <NavigationMenu>
-            <div className="flex items-center">
+        <NavigationMenu className="h-16 bg-black bg-opacity-30 border border-gray-300  shadow w-">
+            <div className="flex items-center justify-center">
                 <NavigationMenuList className = "grid gap-20 p-10">
                     {menuTitles.map( (link) =>
                         <NavigationMenuItem className="flex items-center gap-4">
