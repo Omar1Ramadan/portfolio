@@ -9,6 +9,8 @@ import {
   } from "@/components/ui/card"
 
 import { cn } from '@/lib/utils';
+import Image from 'next/image';
+
 
 type CardProps = React.ComponentProps<typeof Card>
 
@@ -22,9 +24,6 @@ const MainCard = ({className, ...props} : CardProps) =>{
                         <CardDescription>You Are Gya</CardDescription>
                 </CardHeader>
                 <CardContent>
-                    <p>
-                        Card content
-                    </p>
                 </CardContent>
                 <CardFooter>
                     <p>

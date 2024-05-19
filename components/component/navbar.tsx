@@ -13,13 +13,13 @@ import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu"
 const menuTitles = [
     { 
         path : "/", 
-        title: "Home",
+        title: " Home",
         content:
             "Learn More About Me",  
     },
     { 
         path : "/work", 
-        title: "Work", 
+        title: " Work", 
         content: 
             "Look At What Im Passionate About"
     },
@@ -44,11 +44,11 @@ const menuTitles = [
 ];
 const NavMenu = () => {
     return(
-        <NavigationMenu className="h-16 bg-black bg-opacity-30 border border-gray-300  shadow w-">
-            <div className="flex items-center justify-center">
-                <NavigationMenuList className = "grid gap-20 p-10">
+        <NavigationMenu className="h-16 p-5 border-double">
+            <div className="flex bg-gradient-to-r from-primary from-95% to-white to-5% opacity-95 rounded items-center justify-center">
+                <NavigationMenuList className = "grid gap-20 p-7">
                     {menuTitles.map( (link) =>
-                        <NavigationMenuItem className="flex items-center gap-4">
+                        <NavigationMenuItem className="flex items-center bg-secondary hover:opacity-85 rounded-s-sm text-white justify-center">
                             <Link href = {link.path} legacyBehavior passHref>
                                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
                                     {link.title}

@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavMenu from "@/components/component/navbar";
 import Footer from "@/components/component/footer";
+import MainCard from "@/components/component/maincard";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className= {`${inter.className} flex min-h-screen flex-col bg-blue-50`}>
+      <body className= {`${inter.className} flex min-h-screen flex-col bg-secondary-foreground`}>
         <div className = "flex flex-col md:flex-row flex-1">
           <NavMenu/>
           <div className="flex-2">
